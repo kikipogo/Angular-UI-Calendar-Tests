@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BoilerPlate</title>
+  <!-- jquery, moment, and angular have to get included before fullcalendar -->
+  <script type="text/javascript" src="./vendors/jquery.min.js"></script>
+  <script type="text/javascript" src="./vendors/moment.min.js"></script>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="./vendors/fullcalendar.css"/>
+  <script type="text/javascript" src="./vendors/calendar.js"></script>
+  <script type="text/javascript" src="./vendors/fullcalendar.min.js"></script>
+  <script src="scripts/client.js" charset="utf-8"></script>
+  <script src="scripts/controllers/calendar.controller.js" charset="utf-8"></script>
+
+</head>
+<body ng-app="myApp">
+  <h1>Yo</h1>
+  <div ui-calendar="uiConfig.calendar" ng-model="eventSources">
+</body>
+</html>
