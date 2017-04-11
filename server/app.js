@@ -1,16 +1,13 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-// var clients = require('./routes/clientsRoutes.js');
-// var jobs = require('./routes/jobsRoutes.js');
 var bodyParser = require('body-parser');
 
 // parses angular request body on Post and Put requests
 app.use(bodyParser.json());
 
 // Routes
-// app.use('/clients', clients);
-// app.use('/jobs', jobs);
+
 
 // serve static files
 app.use(express.static(path.resolve('./server/public')));
